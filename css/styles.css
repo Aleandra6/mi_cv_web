@@ -1,0 +1,100 @@
+:root {
+  --color-primario: #cd8ab9;
+  --color-fondo: #f9f5ff;
+  --color-texto: #333;
+  --color-blanco: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--color-fondo);
+  margin: 0;
+  color: var(--color-texto);
+}
+
+header {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid var(--color-blanco);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.info-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.rol {
+  font-style: italic;
+  color: #e3d3ff;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: var(--color-blanco);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+  color: var(--color-primario);
+  cursor: pointer;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #8b4b80;
+}
+
+.listas {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  border-top: 3px solid #9f7198;
+}
